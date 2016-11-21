@@ -354,6 +354,7 @@
                             <outlet property="delegate" destination="aDA-ub-PTO" id="fct-yE-WFQ"/>
                         </connections>
                     </tableView>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <connections>
                         <outlet property="btnRefund" destination="eUx-rU-7g1" id="kkZ-40-vGg"/>
                         <outlet property="btnWaitAppraisal" destination="VgO-3Z-EdP" id="ykF-Ye-dL0"/>

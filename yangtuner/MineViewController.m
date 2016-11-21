@@ -78,14 +78,14 @@
     [[AlipaySDK defaultService] payOrder:test fromScheme:alipayScheme callback:^(NSDictionary *resultDic) {
         if ([[resultDic objectForKey:@"resultStatus"]  isEqual: @"9000"]) {
             NSLog(@"%@",@"=======支付成功");
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"支付成功" message:nil delegate:self cancelButtonTitle:@"确认" otherButtonTitles:nil];
-            // optional - add more buttons:
-            [alert show];
+//            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"支付成功" message:nil delegate:self cancelButtonTitle:@"确认" otherButtonTitles:nil];
+//            // optional - add more buttons:
+//            [alert show];
         } else {
             NSLog(@"%@",@"=======支付失败");
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"支付失败" message:nil delegate:self cancelButtonTitle:@"确认" otherButtonTitles:nil];
-            // optional - add more buttons:
-            [alert show];
+//            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"支付失败" message:nil delegate:self cancelButtonTitle:@"确认" otherButtonTitles:nil];
+//            // optional - add more buttons:
+//            [alert show];
         }
     }];
 }
@@ -95,19 +95,19 @@
 - (IBAction)waitAppraisalAction:(id)sender {
 
 //    WeakSelf;
-    [self.maikeService getCmbPayInfo:@"20161110120157802181" cb:^(BOOL isSuccess, id message) {
+    [self.maikeService getCmbPayInfo:@"20161118152230387951" cb:^(BOOL isSuccess, id message) {
         if(isSuccess){
             [self.payService cmbPay:message callback:^(NSDictionary *resultDic) {
                 if ([[resultDic objectForKey:@"resultStatus"]  isEqual: @"9000"]) {
                      NSLog(@"%@",@"=======支付成功");
-                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"支付成功" message:nil delegate:self cancelButtonTitle:@"确认" otherButtonTitles:nil];
-                    // optional - add more buttons:
-                    [alert show];
+//                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"支付成功" message:nil delegate:self cancelButtonTitle:@"确认" otherButtonTitles:nil];
+//                    // optional - add more buttons:
+//                    [alert show];
                 } else {
                      NSLog(@"%@",@"=======支付失败");
-                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"支付失败" message:nil delegate:self cancelButtonTitle:@"确认" otherButtonTitles:nil];
-                    // optional - add more buttons:
-                    [alert show];
+//                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"支付失败" message:nil delegate:self cancelButtonTitle:@"确认" otherButtonTitles:nil];
+//                    // optional - add more buttons:
+//                    [alert show];
                 }
             }];
         }

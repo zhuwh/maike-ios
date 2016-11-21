@@ -45,10 +45,11 @@
     }
     [super viewDidLoad];
     self.title=@"招行一网通支付";
-    self.navigationController.navigationBar.topItem.title = @"返回";
+//    self.navigationController.navigationBar.topItem.title = @"返回";
+    self.navigationItem.leftBarButtonItem.title=@"返回";
 
     _webView = [[UIWebView alloc] init];
-    _webView.frame = self.view.frame;
+    _webView.frame = CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y, self.view.frame.size.width, self.view.frame.size.height-64);
     [self.view addSubview:_webView];
     _webView.delegate = self; // self.wvDelegateColletion;
     
@@ -68,19 +69,23 @@
 -(BOOL) navigationShouldPopOnBackButton ///在这个方法里写返回按钮的事件处理
 {
     NSLog(@"%s",__func__);
-    if (self.callback) {
-        self.callback(@{@"resultStatus":self.isPayOk?@"9000":@"8000"});
+    if([self.webView canGoBack]){
+        [self.webView goBack];
+        return NO;
+    }else{
+        if (self.callback) {
+            self.callback(@{@"resultStatus":self.isPayOk?@"9000":@"8000"});
+        }
+        [[CMBWebKeyboard shareInstance] hideKeyboard];
+        [self.navigationController popViewControllerAnimated:YES];
+        return YES;
     }
-    [[CMBWebKeyboard shareInstance] hideKeyboard];
-    [self.navigationController popViewControllerAnimated:YES];
-    return YES;
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:NO animated:animated];
-    
 //    [self.tabBarController.tabBar setHidden:NO];
     [[CMBWebKeyboard shareInstance] hideKeyboard];
     
@@ -125,6 +130,10 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
     }
     else if([request.URL.query isCaseInsensitiveEqualToString:@"MB_EUserP_PayOK"]){
         self.isPayOk = YES;
+    }
+    else if([request.URL.host isCaseInsensitiveEqualToString:@"h5.yangtuner.com"]){
+        [self navigationShouldPopOnBackButton];
+        return NO;
     }
     
     return YES;
