@@ -53,23 +53,6 @@ SingletonM(Instance)
                                             [self jumpAppStore:trackViewUrl];
                                         }];
                     [UIViewController alertWithTitle:[NSString stringWithFormat:@"新版本 %@",version] message:releaseNotes okAction:okAction cancelAction:cancelAction textAlignment:NSTextAlignmentLeft];
-                    
-//                    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:@"新版本 %@",version] message:releaseNotes preferredStyle:UIAlertControllerStyleAlert];
-//                    /* 
-//                     * 修改message 为左对齐
-//                     */
-//                    UIView *messageParentView = [self getParentViewOfTitleAndMessageFromView:alertController.view];
-//                    if (messageParentView && messageParentView.subviews.count > 1) {
-//                        UILabel *messageLb = messageParentView.subviews[1];
-//                        messageLb.textAlignment = NSTextAlignmentLeft;
-//                    }
-//                    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
-//                    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"升级" style:UIAlertActionStyleDestructive handler:^(UIAlertAction *action) {
-//                        [self jumpAppStore:trackViewUrl];
-//                    }];
-//                    [alertController addAction:cancelAction];
-//                    [alertController addAction:okAction];
-//                    [[UIViewController currentViewController] presentViewController:alertController animated:YES completion:nil];
                    
                 }
             }
@@ -79,20 +62,6 @@ SingletonM(Instance)
     dispatch_semaphore_wait(disp, DISPATCH_TIME_FOREVER);
 }
 
-///*
-// * 查找 UIAlertController 中 message的ParentView
-// */
-//- (UIView *)getParentViewOfTitleAndMessageFromView:(UIView *)view {
-//    for (UIView *subView in view.subviews) {
-//        if ([subView isKindOfClass:[UILabel class]]) {
-//            return view;
-//        }else{
-//            UIView *resultV = [self getParentViewOfTitleAndMessageFromView:subView];
-//            if (resultV) return resultV;
-//        }
-//    }
-//    return nil;
-//}
 
 /*
  * 跳转到AppStore

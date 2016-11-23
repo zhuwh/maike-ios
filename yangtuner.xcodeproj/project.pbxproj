@@ -9,9 +9,11 @@
 /* Begin PBXBuildFile section */
 		179E86A1EACA348F4683108F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED6F2DCC93AA38CB27EE9815 /* libPods.a */; };
 		D217859C1DDF0D43009B47FA /* Cmbkb.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D217859B1DDF0D43009B47FA /* Cmbkb.xcassets */; };
+		D21785A81DE2D477009B47FA /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D217859E1DE2D477009B47FA /* libWeChatSDK.a */; };
+		D21785A91DE2D477009B47FA /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = D217859F1DE2D477009B47FA /* README.txt */; };
+		D21785AA1DE2D477009B47FA /* libXG-SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D21785A41DE2D477009B47FA /* libXG-SDK.a */; };
+		D21785AB1DE2D477009B47FA /* ReleaseNotes.txt in Resources */ = {isa = PBXBuildFile; fileRef = D21785A51DE2D477009B47FA /* ReleaseNotes.txt */; };
 		D221FEAD1DD9674100D053EB /* CmbViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D221FEAC1DD9674100D053EB /* CmbViewController.m */; };
-		D23FE4A01DDE96A4004369C7 /* libXG-SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D23FE49C1DDE96A4004369C7 /* libXG-SDK.a */; };
-		D23FE4A11DDE96A4004369C7 /* ReleaseNotes.txt in Resources */ = {isa = PBXBuildFile; fileRef = D23FE49D1DDE96A4004369C7 /* ReleaseNotes.txt */; };
 		D24D88E11DD16095001228FC /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24D88DF1DD16095001228FC /* AlipaySDK.framework */; };
 		D24D88EE1DD173D0001228FC /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D24D88ED1DD173D0001228FC /* MineViewController.m */; };
 		D24D88F01DD17527001228FC /* MineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D24D88EF1DD17527001228FC /* MineViewController.storyboard */; };
@@ -52,11 +54,16 @@
 		637AA59BCCDAC49B686C5126 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A3DF723ED465F791CEB3A19C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D217859B1DDF0D43009B47FA /* Cmbkb.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Cmbkb.xcassets; sourceTree = "<group>"; };
+		D217859E1DE2D477009B47FA /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		D217859F1DE2D477009B47FA /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		D21785A01DE2D477009B47FA /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		D21785A11DE2D477009B47FA /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		D21785A21DE2D477009B47FA /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		D21785A41DE2D477009B47FA /* libXG-SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libXG-SDK.a"; sourceTree = "<group>"; };
+		D21785A51DE2D477009B47FA /* ReleaseNotes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReleaseNotes.txt; sourceTree = "<group>"; };
+		D21785A61DE2D477009B47FA /* XGPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGPush.h; sourceTree = "<group>"; };
+		D21785A71DE2D477009B47FA /* XGSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGSetting.h; sourceTree = "<group>"; };
 		D221FEAC1DD9674100D053EB /* CmbViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CmbViewController.m; sourceTree = "<group>"; };
-		D23FE49C1DDE96A4004369C7 /* libXG-SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libXG-SDK.a"; sourceTree = "<group>"; };
-		D23FE49D1DDE96A4004369C7 /* ReleaseNotes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReleaseNotes.txt; sourceTree = "<group>"; };
-		D23FE49E1DDE96A4004369C7 /* XGPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGPush.h; sourceTree = "<group>"; };
-		D23FE49F1DDE96A4004369C7 /* XGSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGSetting.h; sourceTree = "<group>"; };
 		D24D88DF1DD16095001228FC /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlipaySDK.framework; path = framework/AlipaySDK.framework; sourceTree = "<group>"; };
 		D24D88E01DD16095001228FC /* openssl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = openssl.framework; path = framework/openssl.framework; sourceTree = "<group>"; };
 		D24D88EC1DD173D0001228FC /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
@@ -128,11 +135,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D21785A81DE2D477009B47FA /* libWeChatSDK.a in Frameworks */,
 				D24D89371DD2F092001228FC /* JavaScriptCore.framework in Frameworks */,
 				D24D89351DD2E159001228FC /* cmbkeyboard.framework in Frameworks */,
 				D24D89181DD1AEED001228FC /* libc++.tbd in Frameworks */,
-				D23FE4A01DDE96A4004369C7 /* libXG-SDK.a in Frameworks */,
 				D24D89161DD1AEE5001228FC /* libz.tbd in Frameworks */,
+				D21785AA1DE2D477009B47FA /* libXG-SDK.a in Frameworks */,
 				D24D89191DD1AFE3001228FC /* CFNetwork.framework in Frameworks */,
 				D24D88E11DD16095001228FC /* AlipaySDK.framework in Frameworks */,
 				D24D89071DD1AC0A001228FC /* CoreMotion.framework in Frameworks */,
@@ -182,22 +190,34 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D217859D1DE2D477009B47FA /* wxsdk */ = {
+			isa = PBXGroup;
+			children = (
+				D217859E1DE2D477009B47FA /* libWeChatSDK.a */,
+				D217859F1DE2D477009B47FA /* README.txt */,
+				D21785A01DE2D477009B47FA /* WechatAuthSDK.h */,
+				D21785A11DE2D477009B47FA /* WXApi.h */,
+				D21785A21DE2D477009B47FA /* WXApiObject.h */,
+			);
+			path = wxsdk;
+			sourceTree = "<group>";
+		};
+		D21785A31DE2D477009B47FA /* xgsdk */ = {
+			isa = PBXGroup;
+			children = (
+				D21785A41DE2D477009B47FA /* libXG-SDK.a */,
+				D21785A51DE2D477009B47FA /* ReleaseNotes.txt */,
+				D21785A61DE2D477009B47FA /* XGPush.h */,
+				D21785A71DE2D477009B47FA /* XGSetting.h */,
+			);
+			path = xgsdk;
+			sourceTree = "<group>";
+		};
 		D221FEAB1DD948E600D053EB /* test */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = test;
-			sourceTree = "<group>";
-		};
-		D23FE49B1DDE96A4004369C7 /* sdk */ = {
-			isa = PBXGroup;
-			children = (
-				D23FE49C1DDE96A4004369C7 /* libXG-SDK.a */,
-				D23FE49D1DDE96A4004369C7 /* ReleaseNotes.txt */,
-				D23FE49E1DDE96A4004369C7 /* XGPush.h */,
-				D23FE49F1DDE96A4004369C7 /* XGSetting.h */,
-			);
-			path = sdk;
 			sourceTree = "<group>";
 		};
 		D24D88E41DD1724C001228FC /* mine */ = {
@@ -278,7 +298,8 @@
 		D2CAA69A1DCE3C1D002537FD = {
 			isa = PBXGroup;
 			children = (
-				D23FE49B1DDE96A4004369C7 /* sdk */,
+				D217859D1DE2D477009B47FA /* wxsdk */,
+				D21785A31DE2D477009B47FA /* xgsdk */,
 				D2CAA6A51DCE3C1D002537FD /* yangtuner */,
 				D2CAA6A41DCE3C1D002537FD /* Products */,
 				9011B210D6684ECABF01246F /* Pods */,
@@ -439,12 +460,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D23FE4A11DDE96A4004369C7 /* ReleaseNotes.txt in Resources */,
+				D21785AB1DE2D477009B47FA /* ReleaseNotes.txt in Resources */,
 				D24D88F01DD17527001228FC /* MineViewController.storyboard in Resources */,
 				D2CAA6B61DCE3C1D002537FD /* LaunchScreen.storyboard in Resources */,
 				D217859C1DDF0D43009B47FA /* Cmbkb.xcassets in Resources */,
 				D24D892D1DD2B965001228FC /* LoginViewController.storyboard in Resources */,
 				D2CAA6B31DCE3C1D002537FD /* Assets.xcassets in Resources */,
+				D21785A91DE2D477009B47FA /* README.txt in Resources */,
 				D2CAA6B11DCE3C1D002537FD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -651,6 +673,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/framework",
 					"$(PROJECT_DIR)/sdk",
+					"$(PROJECT_DIR)/wxsdk",
+					"$(PROJECT_DIR)/xgsdk",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.maikevip.app.mark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -676,6 +700,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/framework",
 					"$(PROJECT_DIR)/sdk",
+					"$(PROJECT_DIR)/wxsdk",
+					"$(PROJECT_DIR)/xgsdk",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.maikevip.app.mark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
